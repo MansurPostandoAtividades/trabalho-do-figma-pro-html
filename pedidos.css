@@ -1,0 +1,213 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    background-color: #00004c; 
+    color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cabecalho-pedidos {
+    width: 100%;
+    height: 12vh;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    background-color: #003F88;
+}
+
+.navegacao-pedidos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu-esquerdo-pedidos, .menu-direito-pedidos {
+    display: flex;
+    gap: 2vw;
+    flex: 1;
+}
+
+.menu-direito-pedidos {
+    justify-content: flex-end;
+}
+
+.link-menu-pedidos {
+    color: #00a2ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.link-menu-pedidos:hover {
+    opacity: 0.8;
+}
+
+.logo-pedidos-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.logo-pedidos-img {
+    height: 10vh;
+    object-fit: contain;
+}
+
+
+.topo-informacoes-pedido {
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5vw;
+    gap: 0.5vh;
+}
+
+.titulo-detalhes-pedido {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.subtitulo-numero-pedido {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+
+.conteudo-pedidos-principal {
+    flex: 1;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto 4vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    gap: 3vh;
+}
+
+
+.bloco-status-azul, .bloco-produtos-azul {
+    background-color: #007cc2; 
+    width: 100%;
+    border-radius: 20px;
+    padding: 3.5vh 4vw;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bloco-status-azul {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bloco-produtos-azul {
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3vh;
+}
+
+
+.titulo-bloco-status, .titulo-bloco-produtos {
+    font-family: 'Merriweather', serif;
+    font-size: 1.85rem;
+    font-weight: 400;
+}
+
+
+.grade-etapas-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2vw;
+}
+
+.coluna-etapa-status {
+    flex: 1;
+}
+
+.texto-status-detalhe {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin-bottom: 0.5vh;
+}
+
+
+.rodape-chamado-status {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+    width: 100%;
+}
+
+.texto-ajuda-desenvolvedor {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+}
+
+.botao-abrir-chamado {
+    background-color: #d9d9d9;
+    color: #000000;
+    border: none;
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    padding: 1vh 2.5vw;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.botao-abrir-chamado:hover {
+    background-color: #c4c4c4;
+}
+
+
+.grade-produtos-detalhes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2vw;
+}
+
+.coluna-produto-info {
+    flex: 1;
+}
+
+.nome-site-escolhido, .nome-hospedagem-info {
+    font-family: 'Merriweather', serif;
+    font-size: 1.55rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.lista-itens-produto {
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1.4;
+}

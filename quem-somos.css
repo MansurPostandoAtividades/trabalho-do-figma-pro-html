@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    background-color: #00004c; 
+    color: #ffffff;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cabecalho-pagina {
+    width: 100%;
+    height: 12vh;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    background-color: #003F88;
+}
+
+.navegacao-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.bloco-esquerdo, .bloco-direito {
+    display: flex;
+    gap: 2vw;
+    flex: 1;
+}
+
+.bloco-direito {
+    justify-content: flex-end;
+}
+
+.item-menu {
+    color: #00a2ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.item-menu:hover {
+    opacity: 0.8;
+}
+
+.item-menu.ativo {
+    color: #00a2ff; 
+}
+
+.bloco-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.imagem-logo {
+    height: 10vh;
+    object-fit: contain;
+}
+
+
+.area-principal {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 4vw;
+}
+
+.conteiner-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    width: 100%;
+    max-width: 1300px;
+    gap: 3vw;
+}
+
+
+.card-informativo {
+    background-color: #007cc2; 
+    flex: 1;
+    border-radius: 15px;
+    padding: 4vh 2.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.titulo-card {
+    font-family: 'Merriweather', serif;
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 3.5vh;
+    color: #ffffff;
+}
+
+
+.texto-card {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+.lista-card {
+    list-style: none;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 2vh;
+}
+
+.lista-card li {
+    position: relative;
+    padding-left: 1.2vw;
+    margin-bottom: 1.5vh;
+}
+
+
+.lista-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+}
+
+.texto-card-final {
+    font-size: 1.05rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-top: auto;
+}

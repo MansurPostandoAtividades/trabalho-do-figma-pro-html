@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    background-color: #00004c;
+    color: #ffffff;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cabecalho-carrinho {
+    width: 100%;
+    height: 12vh;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    background-color: #003F88;
+}
+
+.navegacao-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu-esquerdo-carrinho, .menu-direito-carrinho {
+    display: flex;
+    gap: 2vw;
+    flex: 1;
+}
+
+.menu-direito-carrinho {
+    justify-content: flex-end;
+}
+
+.link-menu-carrinho {
+    color: #00a2ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.link-menu-carrinho:hover {
+    opacity: 0.8;
+}
+
+.logo-carrinho-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.logo-carrinho-img {
+    height: 10vh;
+    object-fit: contain;
+}
+
+
+.topo-pagina {
+    text-align: center;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-carrinho-geral {
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+.conteudo-carrinho-principal {
+    flex: 1;
+    width: 92%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 4vh;
+}
+
+
+.rotulo-secao {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.texto-rotulo {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+.container-lista-carrinho {
+    background-color: #007cc2; 
+    flex: 1;
+    max-height: 70vh;
+    border-radius: 20px;
+    padding: 4vh 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.linha-produto-carrinho {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 28vh; 
+    gap: 3vw;
+}
+
+
+.bloco-imagem-produto {
+    width: 24vw;
+    max-width: 320px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #004b7c; 
+}
+
+.imagem-produto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.bloco-detalhes-produto {
+    flex: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5vh 0;
+}
+
+.nome-produto {
+    font-family: 'Merriweather', serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+.lista-detalhes {
+    list-style: none;
+    font-size: 1.15rem;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.botao-remover {
+    background-color: #d1d1d1; 
+    color: #000000;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1vh 0;
+    width: 18vw;
+    max-width: 240px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.botao-remover:hover {
+    background-color: #b8b8b8;
+}
+
+
+.bloco-preco-produto {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-top: 0.5vh;
+    gap: 4vh;
+}
+
+.titulo-preco {
+    font-family: 'Merriweather', serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+.valor-preco {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
